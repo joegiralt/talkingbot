@@ -4,7 +4,7 @@ require 'mactts'
 
  
 client = Cleverbot::Client.new
-sentences = ['Hi.']
+sentences = ['Do you believe in God?']
 name = 'Joe: '
  
 sentences.each do |n|
@@ -12,13 +12,13 @@ sentences.each do |n|
   if name == 'Joe: '
     print name
     p n
-    Mac::TTS.say(n, :vicki)
+    Mac::TTS.say(n, :fred)
 
     name = 'Sally: '
   else
     print 'Sally: '
     p n
-    Mac::TTS.say(n, :fred)
+    Mac::TTS.say(n, :vicki)
     name = 'Joe: '
   end
 
